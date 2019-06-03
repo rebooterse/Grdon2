@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/welcome_registracion_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Մուտք գործել համակարգ"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_below="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel2"
+        android:backgroundTint="#00FFFFFF">
+
+        <TextView
+            android:id="@+id/registracion_info_for_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Գրեք Ձեր հեռախոսհամարը" />
+
+        <EditText
+            android:id="@+id/login_area_for_phone_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registracion_info_for_phone_number"
+            android:layout_centerHorizontal="true"
+            android:hint="+374 XX XXXXXX" />
+
+        <EditText
+            android:id="@+id/null_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/login_area_for_phone_number"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/registracion_info_for_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/null_text_1"
+            android:layout_centerHorizontal="true"
+            android:text="Գրեք Ձեր գաղտնաբառը" />
+
+        <EditText
+            android:id="@+id/login_area_for_password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registracion_info_for_password"
+            android:layout_centerHorizontal="true"
+            android:hint="Գաղտնաբառ"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/null_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/login_area_for_password" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/null_text_2"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:text=" Մուտք գործել "
+            android:onClick="loginButton"/>
+        <TextView
+            android:layout_below="@+id/button_login"
+            android:id="@+id/null_text_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/registracion_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/null_text_3"
+            android:background="#FFFFFF"
+            android:text=" Գրանցվել "
+            android:onClick="registracion"/>
+
+
+        <Button
+            android:id="@+id/repeat_password_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/null_text_3"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:text=" Վերականգնել գաղտնաբառը " />
+
+    </RelativeLayout>
+</RelativeLayout>

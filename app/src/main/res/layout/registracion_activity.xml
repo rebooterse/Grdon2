@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistracionActivity"
+   >
+    <TextView
+        android:id="@+id/text_view_regsitarcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Գրանցում"/>
+    <TextView
+        android:layout_below="@+id/text_view_regsitarcion"
+        android:id="@+id/null_text_21"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp" />
+    <EditText
+        android:layout_below="@+id/null_text_21"
+        android:id="@+id/registracion_name_label"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Ձեր անունը"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_below="@+id/registracion_name_label"
+        android:id="@+id/null_text_22"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp" />
+    <EditText
+        android:layout_below="@+id/null_text_22"
+        android:id="@+id/registracion_lastname_label"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Ձեր ազգանունը"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_below="@+id/registracion_lastname_label"
+        android:id="@+id/null_text_23"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp" />
+    <EditText
+        android:layout_below="@+id/null_text_23"
+        android:id="@+id/registracion_phone_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ձեր հեռախոսահամարը"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_below="@+id/registracion_phone_number_label"
+        android:id="@+id/null_text_24"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp" />
+    <EditText
+        android:layout_below="@+id/null_text_24"
+        android:id="@+id/registracion_password_label"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:hint="Ձեր գաղտնաբառը"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_below="@+id/registracion_password_label"
+        android:id="@+id/null_text_25"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp" />
+    <EditText
+        android:layout_below="@+id/null_text_25"
+        android:id="@+id/registracion_password_repeat_label"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:hint="Կրկնեք գաղտնաբառը"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_below="@+id/registracion_password_repeat_label"
+        android:id="@+id/null_text_26"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp" />
+    <Button
+        android:layout_below="@+id/null_text_26"
+        android:id="@+id/registracion_buttom_add"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Գրանցվել"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
